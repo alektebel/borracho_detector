@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collect Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Recolección de Datos</h1>
+    <form action="/submit" method="POST">
+        <label for="hora_consumicion">Hora de consumición:</label>
+        <input type="time" id="hora_consumicion" name="hora_consumicion" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" required><br><br>
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" name="altura" required><br><br>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="frecuencia_bebida">Frecuencia de bebida:</label>
+        <input type="text" id="frecuencia_bebida" name="frecuencia_bebida" required><br><br>
+
+        <label for="copa_ron">Copa de Ron (#):</label>
+        <input type="number" id="copa_ron" name="copa_ron"><br><br>
+
+        <label for="copa_ginebra">Copa de Ginebra (#):</label>
+        <input type="number" id="copa_ginebra" name="copa_ginebra"><br><br>
+
+        <label for="cerveza">Cerveza (L):</label>
+        <input type="number" id="cerveza" name="cerveza" step="0.1"><br><br>
+
+        <label for="tercio_licor">Tercio de Vaso Licor Brandy:</label>
+        <input type="number" id="tercio_licor" name="tercio_licor"><br><br>
+
+        <label for="hora_ultima_comida">Hora de la última comida:</label>
+        <input type="time" id="hora_ultima_comida" name="hora_ultima_comida" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
